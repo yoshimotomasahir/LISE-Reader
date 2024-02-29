@@ -1,6 +1,8 @@
 # lise-reader README
 
-This is the README for VS Code extension "lise-reader". You can use the LISE++ file syntax highlighter in VS Code.
+You can use the LISE++ file syntax highlighter in VS Code.
+
+![syntax highlight example](example.png)
 
 ## Features
 
@@ -16,7 +18,7 @@ VS Code
 
 ```
 cd %USERPROFILE%\.vscode\extensions
-git clone https://github.com/yoshimotomasahir/lise-leader
+git clone https://github.com/yoshimotomasahir/LISE-Reader
 ```
 Restart vscode.
 
@@ -24,7 +26,7 @@ Restart vscode.
 
 ```
 cd ~/.vscode/extensions
-git clone https://github.com/yoshimotomasahir/lise-leader
+git clone https://github.com/yoshimotomasahir/LISE-Reader
 ```
 Restart vscode.
 
