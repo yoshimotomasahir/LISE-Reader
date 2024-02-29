@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "LISE",
+	"patterns": [
+		{
+			"include": "#const"
+		},
+		{
+			"include": "#section"
+		},
+		{
+			"include": "#inline_comment"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"section": {
+			"patterns": [
+				{
+					"name": "markup.heading",
+					"match": "^\\[.+\\]"
+				},
+				{
+					"name": "markup.bold",
+					"match": "^\\{.+\\}"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control",
+					"match": "([a-zA-Z0-9_ \\-+/,]+)\\s*=",
+					"captures": {
+						"1": {
+							"patterns": [
+								{
+									"include": "#var_name"
+								}
+							]
+						}
+					}
+				}
+			],
+			"repository": {
+				"var_name": {
+					"patterns": [
+						{
+							"name": "variable.other.example",
+							"match": ".+"
+						}
+					]
+				}
+			}
+		},
+		"const": {
+			"patterns": [
+				{
+					"name": "string",
+					"match": "\\b(\\d{1,3}[A-Z][a-z]{0,})\\b"
+				}
+			]
+		},
+		"inline_comment": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "(?<!Line[0-9 =;]+);.*"
+				}
+			]
+		}
+	},
+	"scopeName": "lise-file.lpp"
+}

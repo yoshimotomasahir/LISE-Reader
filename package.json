@@ -1,0 +1,25 @@
+{
+  "name": "lise-reader",
+  "displayName": "LISE-Reader",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lise",
+      "aliases": ["LISE", "lise"],
+      "extensions": [".lpp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lise",
+      "scopeName": "lise-file.lpp",
+      "path": "./syntaxes/lise.tmLanguage.json"
+    }]
+  }
+}
