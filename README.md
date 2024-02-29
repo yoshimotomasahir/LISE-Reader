@@ -1,16 +1,16 @@
 # lise-reader README
 
-You can use the LISE++ file syntax highlighter in VS Code.
+You can use the [LISE++](https://lise.nscl.msu.edu/lise.html) file syntax highlighter in VS Code.
 
 ![syntax highlight example](example.png)
 
 ## Features
 
-It supports the basic syntax of LISE++.
+It supports the basic syntax of LISE++ file.
 
 ## Requirements
 
-VS Code
+VSCode, node, and git
 
 ## Extension Settings
 
